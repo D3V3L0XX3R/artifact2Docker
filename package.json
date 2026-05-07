@@ -1,0 +1,25 @@
+{
+  "name": "art2dock",
+  "version": "0.1.0",
+  "description": "Convert AI-generated TSX/JSX artifacts into Docker-ready project folders",
+  "type": "module",
+  "bin": {
+    "art2dock": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
